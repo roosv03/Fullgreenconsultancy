@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <Meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Full Green Consultancy</title>
+</head>
+<body>
+    
+<!--navigationbar-->
+    
+<nav>
+    <div class="nav-brand">
+        <a href="index.html"><img src="Full_Green_Consultancy_kopie.png">
+        <h1>Full Green Consultancy</h1></a>
+    </div>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a class="nav-link-section" href="index.html">Home</a></li>
+        <li><a class="nav-link-section" href="services.html">Services</a></li>
+        <li><a class="nav-link-section" href="Consultancyinfo.html">Consultancy</a></li>
+        <li><a class="nav-link-section" href="certifications.html">Certification</a></li>
+        
+    </ul>
+</nav>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const navItems = document.querySelectorAll('.nav-links li');
+
+        // Toggle the nav menu
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            
+            // Animate links
+            navItems.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                }
+            });
+
+            // Hamburger animation
+            hamburger.classList.toggle('toggle');
+        });
+    });
+</script>
+
+ 
+<!--title-->
+    <div class="page-title">
+        <hr>
+        <h1>Certifications</h1>
+    </div>
+    
+<!--carousel-->
+    <div class="container-certifications">
+        <div class="slider">
+            <div class="slide slide1">
+                <div class="caption">
+                    <h2>Trade License</h2>
+                    <p>A trade license is needed by a business in order to legally carry out various activities. It is a legal document that provides legitimacy to a company and gives it the ability to perform certain actions in the country in which the trade license was granted.</p>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="caption">
+                    <h2>Certificate of Incorporation</h2>
+                    <p>A certificate of incorporation is a legal document/license relating to the formation of a company or corporation. It is a license to form a corporation issued by state government or, in some jurisdictions, by non-governmental entity/corporation.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+<!--footersection-->
+    
+     <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>About us</h2>
+                <div class="content">
+                    <p>Full Green Consultancy is a Consultancy company specialised in vegetables. Also, we organize all kinds of events surrounding the horticulture genre. Full Green Consultancy can fulfil all kinds of consultancy requests, like standard consultancy and turn-key projects.</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/fullgreen.consultancy.5" target="_blank"><span class="fab fa-facebook-f"></span></a>
+                        <a href="https://www.linkedin.com/in/fullgreenconsultancy/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+                        <a href="https://www.instagram.com/fullgreenconsultancy/" target="_blank"><span class="fab fa-instagram"></span></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="center box">
+                <h2>Information</h2>
+                <div class="content">
+                    <div class="place">
+                    <a href="https://goo.gl/maps/ZoA3fZWDcY4CZ2r27" target="_blank" rel="noopener noreferrer"><span class="fas fa-map-marker-alt"></span></a>
+                    <span class="text">Off. 404 Al Saaha oof.B,
+                        Burj Khalifa Dubai UAE</span>
+                    </div>
+                    <br>
+                    <div class="email">
+                    <a href="mailto:Fullgreenconsultancy@gmail.com" target="_blank" rel="noopener noreferrer"><span class="fas fa-envelope"></span></a>
+                    <span class="text">Fullgreenconsultancy@gmail.com</span>
+                    </div>
+                    <br>
+                    <div class="phonenumber">
+                    <a href="tel:+971 58 510 6763" target="_blank" rel="noopener noreferrer"><span class="fas fa-solid fa-phone"></span></a>
+                    <span class="text">+971 58 510 6763</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="right box">
+                <h2>Contact us</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">
+                            Email *</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Message *</div>
+                            <textarea rows="2" cols="25" required></textarea>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+                <center>
+                    <span class="credit">Created By <a href="#">The Full Green Consultancy Team</a> | </span>
+                    <span class="far fa-copyright"></span><span> 2020 All Rights Served.</span>
+                </center>
+            </div>
+    </footer>
+    
+</body>
+</html>
